@@ -2,7 +2,7 @@ extends Node
 
 var websocket_client: WebSocketPeer
 var is_connected_to_server = false
-var server_url = "ws://192.168.20.30:8080"
+var server_url = "wss://qynto-talk-room-production.up.railway.app"
 var connection_attempt = 0
 var max_connection_attempts = 3
 var reconnect_timer: Timer

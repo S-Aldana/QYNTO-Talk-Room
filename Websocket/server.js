@@ -155,8 +155,7 @@ function broadcastLobbyListUpdate() {
     });
 }
 
-server.listen(PORT, () => {
-    console.log(`WebSocket server running at http://localhost:${PORT}`);
-    console.log(`Your Android game should connect to: ws://YOUR_IP:${PORT}`);
-    console.log('To find your local IP, run: ipconfig (Windows) or ifconfig (Mac/Linux)');
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`WebSocket server running on port ${PORT}`);
+    console.log('Server ready for connections');
 });
