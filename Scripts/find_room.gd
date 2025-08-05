@@ -104,12 +104,26 @@ func setup_room_node(room_node: Control, lobby_data: Dictionary):
 		var host_type_value = lobby_data.get("host_type", "auto")
 		host_type.text = "HOST TYPE: " + host_type_value.capitalize()
 	
+	# ARREGLO PRINCIPAL: Calcular correctamente el conteo de jugadores
 	var current_players = room_content.get_node_or_null("currentPlayers")
 	if current_players:
-		var current_count = lobby_data.get("players", []).size() if lobby_data.has("players") else lobby_data.get("current_players", 1)
+		# Usar total_players si está disponible, sino calcular manualmente
+		var current_count = get_total_player_count(lobby_data)
 		var max_count = lobby_data.get("max_players", lobby_data.get("max_participants", 7))
 		var infinite_participants = lobby_data.get("infinite_participants", false)
 		current_players.text = str(current_count) + "/" + ("∞" if infinite_participants else str(max_count))
+		
+		print("=== PLAYER COUNT DEBUG ===")
+		print("Lobby ID: ", lobby_data.get("lobby_id", "unknown"))
+		print("Current count calculated: ", current_count)
+		print("Max count: ", max_count)
+		print("Final display: ", current_players.text)
+		print("Players list size: ", lobby_data.get("players_list", []).size())
+		print("Current players field: ", lobby_data.get("current_players", "not found"))
+		print("Total players field: ", lobby_data.get("total_players", "not found"))
+		print("Human players: ", lobby_data.get("human_players", []).size())
+		print("AI players: ", lobby_data.get("ai_players", []).size())
+		print("=== END DEBUG ===")
 
 	var join_button = room_content.get_node_or_null("JoinButton")
 	if join_button:
@@ -120,6 +134,32 @@ func setup_room_node(room_node: Control, lobby_data: Dictionary):
 		join_button.pressed.connect(_on_join_lobby_pressed.bind(lobby_id, is_public))
 	
 	setup_player_icons(room_node, lobby_data)
+
+# Nueva función para calcular correctamente el total de jugadores
+func get_total_player_count(lobby_data: Dictionary) -> int:
+	# Prioridad 1: usar total_players si está disponible
+	if lobby_data.has("total_players"):
+		return lobby_data.get("total_players", 0)
+	
+	# Prioridad 2: usar players_list si está disponible
+	if lobby_data.has("players_list"):
+		return lobby_data.get("players_list", []).size()
+	
+	# Prioridad 3: sumar human_players + ai_players
+	var human_count = 0
+	var ai_count = 0
+	
+	if lobby_data.has("human_players"):
+		human_count = lobby_data.get("human_players", []).size()
+	elif lobby_data.has("current_players"):
+		human_count = lobby_data.get("current_players", 0)
+	
+	if lobby_data.has("ai_players"):
+		ai_count = lobby_data.get("ai_players", []).size()
+	elif lobby_data.has("current_ai_players"):
+		ai_count = lobby_data.get("current_ai_players", 0)
+	
+	return human_count + ai_count
 
 func setup_player_icons(room_node: Control, lobby_data: Dictionary):
 	var room_content = room_node.get_node_or_null("RoomContent")
@@ -144,11 +184,18 @@ func setup_player_icons(room_node: Control, lobby_data: Dictionary):
 	for child in children_to_remove:
 		child.queue_free()
 
+	# Usar players_list para mostrar iconos de jugadores reales
 	var players_list = lobby_data.get("players_list", [])
 	var max_players = lobby_data.get("max_players", lobby_data.get("max_participants", 7))
 	var max_ai_players = lobby_data.get("max_ai_players", 0)
 	var infinite_participants = lobby_data.get("infinite_participants", false)
-	var display_total = (players_list.size() + max_ai_players) if infinite_participants else max_players
+	
+	# Calcular el total de slots a mostrar
+	var display_total = max_players
+	if infinite_participants:
+		# Si es infinito, mostrar solo los jugadores actuales + algunos slots vacíos
+		display_total = max(players_list.size() + 2, max_players)
+	
 	var players_per_row = 7
 	var rows_needed = ceil(float(display_total) / float(players_per_row))
 

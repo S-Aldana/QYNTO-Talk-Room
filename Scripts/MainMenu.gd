@@ -1,7 +1,13 @@
 extends Control
 
+var current_page = 1
+var total_pages = 5
+
 func _ready():
 	$tutorial.visible = false
+	$tutorial/video/next.pressed.connect(_on_next_pressed)
+	$tutorial/video/back.pressed.connect(_on_back_pressed)
+	update_tutorial_pages()
 	if Player.needs_name_setup():
 		$MenuButtons/FindRoomButton.disabled = true
 		$MenuButtons/CreateRoomButton.disabled = true
@@ -99,3 +105,18 @@ func _on_close_tutorial_pressed() -> void:
 	if LobbyManager.is_connected_to_server and not Player.needs_name_setup():
 		$MenuButtons/FindRoomButton.disabled = false
 		$MenuButtons/CreateRoomButton.disabled = false
+
+func _on_next_pressed():
+	if current_page < total_pages:
+		current_page += 1
+		update_tutorial_pages()
+
+func _on_back_pressed():
+	if current_page > 1:
+		current_page -= 1
+		update_tutorial_pages()
+
+func update_tutorial_pages():
+	for i in range(1, total_pages + 1):
+		var page = $tutorial/video.get_node("tutorial" + str(i))
+		page.visible = (i == current_page)

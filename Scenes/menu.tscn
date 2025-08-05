@@ -1,4 +1,4 @@
-[gd_scene load_steps=195 format=3 uid="uid://drwc21hbg5hju"]
+[gd_scene load_steps=199 format=3 uid="uid://drwc21hbg5hju"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_lv53y"]
 [ext_resource type="FontFile" uid="uid://bg5i4e2ar23on" path="res://Fonts/Atarian/SF Atarian System.ttf" id="2_741ts"]
@@ -42,7 +42,19 @@
 [ext_resource type="Texture2D" uid="uid://p7rjyglpjwar" path="res://Backgrounds/menu2.png" id="40_e1b7j"]
 [ext_resource type="Texture2D" uid="uid://cnmp16ayncds7" path="res://Backgrounds/Imgs/QYNTOtitle.png" id="41_2ustr"]
 [ext_resource type="Texture2D" uid="uid://c4cr4bxtggxlu" path="res://Backgrounds/Imgs/sendMessage-Icon.png" id="42_37ibj"]
-[ext_resource type="Texture2D" uid="uid://c53fnlhebsw7v" path="res://Backgrounds/Imgs/chat.png" id="43_acoil"]
+[ext_resource type="Texture2D" uid="uid://b7yr3ihyenph8" path="res://Backgrounds/Imgs/tutorial.png" id="43_fni4h"]
+[ext_resource type="Texture2D" uid="uid://nlt8qv0nbgxk" path="res://Backgrounds/Imgs/arrow-icon.png" id="44_wwaa7"]
+[ext_resource type="Texture2D" uid="uid://dd4rslilv1urw" path="res://Backgrounds/Imgs/tutorial1_1.jpg" id="45_4eonm"]
+[ext_resource type="Texture2D" uid="uid://b6pplopeewnm1" path="res://Backgrounds/Imgs/tutorial1_2.png" id="46_wd8jy"]
+[ext_resource type="Texture2D" uid="uid://pgo0jbjiicip" path="res://Backgrounds/Imgs/tutorial2-1.png" id="47_kvw6t"]
+[ext_resource type="Texture2D" uid="uid://dixyqqj51a8h0" path="res://Backgrounds/Imgs/cursor.png" id="48_rpp1k"]
+[ext_resource type="Texture2D" uid="uid://cnq8ll5ebfaf3" path="res://Backgrounds/Imgs/tutorial3_1.png" id="49_ift2e"]
+[ext_resource type="Texture2D" uid="uid://ukrl8geqxkes" path="res://Backgrounds/Imgs/tutorial3_2.png" id="50_5aglu"]
+[ext_resource type="Texture2D" uid="uid://cqkubo05w2ctp" path="res://Backgrounds/Imgs/tutorial3_3.png" id="51_fex5k"]
+[ext_resource type="Texture2D" uid="uid://u74u4pmv7gt8" path="res://Backgrounds/Imgs/tutorial4.png" id="52_iivb2"]
+[ext_resource type="Texture2D" uid="uid://mw36kqpqa4ex" path="res://Backgrounds/Imgs/tutorial5_1.png" id="53_ndc2s"]
+[ext_resource type="Texture2D" uid="uid://cl2oovhdowh2q" path="res://Backgrounds/Imgs/tutorial5_2.png" id="54_o2234"]
+[ext_resource type="Texture2D" uid="uid://cv6fcuq0ja2h2" path="res://Backgrounds/Imgs/tutorial5_3.png" id="55_rc2on"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_54apv"]
 
@@ -375,27 +387,11 @@ corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rah5n"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4evb"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84hnn"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_67dq1"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rvgt6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_11cfy"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3lc1"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c33gk"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l3u5g"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvanp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q7xqn"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aaynj"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fuhvx"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgo3o"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rbhh3"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -1425,6 +1421,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_deqdj")
 text = "CANCEL"
 
 [node name="CreateRoom" type="Panel" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
@@ -2424,7 +2421,6 @@ scale = Vector2(0.176124, 1)
 texture = ExtResource("28_hivax")
 
 [node name="tutorial" type="Panel" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
@@ -2500,33 +2496,630 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_rah5n")
 
 [node name="TextureRect" type="TextureRect" parent="tutorial/video"]
 layout_mode = 0
-offset_left = 74.0
-offset_top = 28.0
-offset_right = 1120.0
-offset_bottom = 613.0
-texture = ExtResource("43_acoil")
+offset_left = 24.0
+offset_right = 1125.0
+offset_bottom = 645.0
+texture = ExtResource("43_fni4h")
 expand_mode = 1
+
+[node name="Label" type="Label" parent="tutorial/video"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 86.0
+offset_right = 943.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_fonts/font = ExtResource("2_741ts")
+theme_override_font_sizes/font_size = 35
+text = " WELCOME  TO  QYNTO!"
+horizontal_alignment = 1
+
+[node name="tutorial1" type="Panel" parent="tutorial/video"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_84hnn")
+
+[node name="Label" type="Label" parent="tutorial/video/tutorial1"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 147.0
+offset_right = 935.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.603922, 0.333333, 0, 1)
+text = "Welcome to a fast-paced multiplayer chat game where players and smart AI bots mingle in real time.
+Jump into lively lobbies, meet others, chat, and experience fun surprise events as conversations unfold. Whether you're here to talk or just hang out, there's always something happening."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Tutorial11" type="Sprite2D" parent="tutorial/video/tutorial1"]
+position = Vector2(327, 391)
+scale = Vector2(0.433471, 0.481742)
+texture = ExtResource("45_4eonm")
+
+[node name="Label2" type="Label" parent="tutorial/video/tutorial1"]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 232.0
+offset_right = 398.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Find a Room"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="tutorial/video/tutorial1"]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 525.0
+offset_right = 479.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Join an ongoing chat room and jump straight into the conversation, see how many people are inside, including smart AI bots."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="tutorial/video/tutorial1"]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 232.0
+offset_right = 788.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Lobby Creation"
+horizontal_alignment = 2
+
+[node name="Tutorial12" type="Sprite2D" parent="tutorial/video/tutorial1"]
+position = Vector2(712.5, 391.5)
+scale = Vector2(0.377049, 0.41925)
+texture = ExtResource("46_wd8jy")
+
+[node name="Label5" type="Label" parent="tutorial/video/tutorial1"]
+layout_mode = 0
+offset_left = 565.0
+offset_top = 525.0
+offset_right = 863.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Customize your own chat room with a mix of humans and AI, set the number of rounds, message or time-based events, and who can join."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Line" type="Sprite2D" parent="tutorial/video/tutorial1"]
+visible = false
+position = Vector2(525.94, 430.34)
+rotation = 1.5708
+scale = Vector2(0.718619, 1.35317)
+texture = ExtResource("28_hivax")
+
+[node name="Line2" type="Sprite2D" parent="tutorial/video/tutorial1"]
+position = Vector2(531, 134)
+scale = Vector2(1.86605, 1.33333)
+texture = ExtResource("28_hivax")
+
+[node name="tutorial2" type="Panel" parent="tutorial/video"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_84hnn")
+
+[node name="Label6" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 161.0
+offset_right = 935.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0.603922, 0.333333, 0, 1)
+text = "Explore the interactive elements around the room!
+Each one gives you access to different tools, players, and features during the game."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial2"]
+position = Vector2(531, 134)
+scale = Vector2(1.86605, 1.33333)
+texture = ExtResource("28_hivax")
+
+[node name="Tutorial2-1" type="Sprite2D" parent="tutorial/video/tutorial2"]
+position = Vector2(530, 391)
+scale = Vector2(0.364063, 0.364063)
+texture = ExtResource("47_kvw6t")
+
+[node name="Line" type="Sprite2D" parent="tutorial/video/tutorial2/Tutorial2-1"]
+position = Vector2(577.297, -2.5307)
+rotation = 1.5708
+scale = Vector2(1.53709, 2.92577)
+texture = ExtResource("28_hivax")
+
+[node name="Line4" type="Sprite2D" parent="tutorial/video/tutorial2/Tutorial2-1"]
+position = Vector2(-577.297, 0.960632)
+rotation = 1.5708
+scale = Vector2(1.55321, 2.92577)
+texture = ExtResource("28_hivax")
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial2/Tutorial2-1"]
+position = Vector2(-0.00012207, -326.487)
+scale = Vector2(2.63654, 2.88288)
+texture = ExtResource("28_hivax")
+
+[node name="Line5" type="Sprite2D" parent="tutorial/video/tutorial2/Tutorial2-1"]
+position = Vector2(1.08081, 328.649)
+scale = Vector2(2.70145, 2.88288)
+texture = ExtResource("28_hivax")
+
+[node name="chat" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 2
+offset_left = 139.0
+offset_top = 244.0
+offset_right = 283.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Chat Window"
+horizontal_alignment = 1
+
+[node name="textParticipant" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 292.0
+offset_right = 294.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Send and read messages from players and bots.
+Join live events, vote, and earn points as the game progresses."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Container" type="Container" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_top = 42.0
+offset_right = 40.0
+offset_bottom = 82.0
+
+[node name="Line5" type="Sprite2D" parent="tutorial/video/tutorial2/Container"]
+position = Vector2(207.5, 231)
+scale = Vector2(0.3903, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Line4" type="Sprite2D" parent="tutorial/video/tutorial2/Container"]
+position = Vector2(308, 249)
+rotation = 0.785398
+scale = Vector2(0.120092, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Cursor" type="Sprite2D" parent="tutorial/video/tutorial2/Container"]
+position = Vector2(352, 249)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("48_rpp1k")
+
+[node name="Line6" type="Sprite2D" parent="tutorial/video/tutorial2/Container"]
+position = Vector2(346.5, 266)
+scale = Vector2(0.103926, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="LeaveRoom" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 399.0
+offset_right = 282.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Leave Room"
+horizontal_alignment = 1
+
+[node name="textLeave" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 442.0
+offset_right = 287.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Click here to exit the current chat room
+and return to the main menu."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Container2" type="Container" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_top = 42.0
+offset_right = 40.0
+offset_bottom = 82.0
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial2/Container2"]
+position = Vector2(389, 349.098)
+scale = Vector2(0.290993, 1.03257)
+texture = ExtResource("28_hivax")
+
+[node name="Line8" type="Sprite2D" parent="tutorial/video/tutorial2/Container2"]
+position = Vector2(206.25, 387)
+scale = Vector2(0.384527, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Cursor2" type="Sprite2D" parent="tutorial/video/tutorial2/Container2"]
+position = Vector2(450, 325)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("48_rpp1k")
+
+[node name="Line7" type="Sprite2D" parent="tutorial/video/tutorial2/Container2"]
+position = Vector2(308.174, 367.826)
+rotation = -0.785398
+scale = Vector2(0.132022, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="board" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 2
+offset_left = 757.0
+offset_top = 244.0
+offset_right = 940.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Room Info & Settings"
+horizontal_alignment = 1
+
+[node name="textParticipant2" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 292.0
+offset_right = 941.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Click the board to view detailed room settings:
+• Current players (human + AI)
+• Host type and configuration
+• Active and past events"
+autowrap_mode = 3
+
+[node name="Container3" type="Container" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 42.0
+offset_right = 683.0
+offset_bottom = 82.0
+
+[node name="Line5" type="Sprite2D" parent="tutorial/video/tutorial2/Container3"]
+position = Vector2(207.5, 231)
+scale = Vector2(0.3903, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Line4" type="Sprite2D" parent="tutorial/video/tutorial2/Container3"]
+position = Vector2(33.928, 272.209)
+rotation = -0.436332
+scale = Vector2(0.459354, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Cursor" type="Sprite2D" parent="tutorial/video/tutorial2/Container3"]
+position = Vector2(-99, 310)
+rotation = 1.5708
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("48_rpp1k")
+
+[node name="Line6" type="Sprite2D" parent="tutorial/video/tutorial2/Container3"]
+position = Vector2(-73.75, 314)
+scale = Vector2(0.0889145, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="list" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 781.0
+offset_top = 399.0
+offset_right = 925.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Participant List"
+horizontal_alignment = 1
+
+[node name="textLeave2" type="Label" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 775.0
+offset_top = 442.0
+offset_right = 929.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Check who's currently in the room.
+See all participants, including AI bots and humans."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Container4" type="Container" parent="tutorial/video/tutorial2"]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 42.0
+offset_right = 683.0
+offset_bottom = 82.0
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial2/Container4"]
+position = Vector2(65.1875, 335)
+scale = Vector2(0.0545613, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Line8" type="Sprite2D" parent="tutorial/video/tutorial2/Container4"]
+position = Vector2(208.5, 388)
+scale = Vector2(0.381062, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="Cursor2" type="Sprite2D" parent="tutorial/video/tutorial2/Container4"]
+position = Vector2(64, 311)
+rotation = 1.5708
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("48_rpp1k")
+
+[node name="Line7" type="Sprite2D" parent="tutorial/video/tutorial2/Container4"]
+position = Vector2(101.385, 361.385)
+rotation = 0.785398
+scale = Vector2(0.17523, 1.06516)
+texture = ExtResource("28_hivax")
+
+[node name="tutorial3" type="Panel" parent="tutorial/video"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_84hnn")
+
+[node name="Label6" type="Label" parent="tutorial/video/tutorial3"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 146.0
+offset_right = 935.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.603922, 0.333333, 0, 1)
+text = "Earn points through various challenges:
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial3"]
+position = Vector2(531, 134)
+scale = Vector2(1.86605, 1.33333)
+texture = ExtResource("28_hivax")
+
+[node name="chat" type="Label" parent="tutorial/video/tutorial3"]
+layout_mode = 2
+offset_left = 121.0
+offset_top = 174.0
+offset_right = 943.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Speed Challenges:"
+horizontal_alignment = 1
+
+[node name="chat2" type="Label" parent="tutorial/video/tutorial3"]
+layout_mode = 2
+offset_left = 121.0
+offset_top = 304.0
+offset_right = 943.0
+offset_bottom = 332.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Voting Events: "
+horizontal_alignment = 1
+
+[node name="chat3" type="Label" parent="tutorial/video/tutorial3"]
+layout_mode = 2
+offset_left = 121.0
+offset_top = 434.0
+offset_right = 943.0
+offset_bottom = 462.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Debate Topics:"
+horizontal_alignment = 1
+
+[node name="Tutorial31" type="Sprite2D" parent="tutorial/video/tutorial3"]
+position = Vector2(526, 256)
+scale = Vector2(0.793561, 0.793561)
+texture = ExtResource("49_ift2e")
+
+[node name="Tutorial32" type="Sprite2D" parent="tutorial/video/tutorial3"]
+position = Vector2(530, 384)
+scale = Vector2(0.795276, 0.795276)
+texture = ExtResource("50_5aglu")
+
+[node name="Tutorial33" type="Sprite2D" parent="tutorial/video/tutorial3"]
+position = Vector2(533.246, 517.375)
+scale = Vector2(0.814885, 0.814885)
+texture = ExtResource("51_fex5k")
+
+[node name="tutorial4" type="Panel" parent="tutorial/video"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_84hnn")
+
+[node name="Label6" type="Label" parent="tutorial/video/tutorial4"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 146.0
+offset_right = 935.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.603922, 0.333333, 0, 1)
+text = "Spend your earned points on player icons!"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial4"]
+position = Vector2(531, 134)
+scale = Vector2(1.86605, 1.33333)
+texture = ExtResource("28_hivax")
+
+[node name="chat" type="Label" parent="tutorial/video/tutorial4"]
+layout_mode = 2
+offset_left = 121.0
+offset_top = 174.0
+offset_right = 943.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Icon Shop:"
+horizontal_alignment = 1
+
+[node name="Tutorial4" type="Sprite2D" parent="tutorial/video/tutorial4"]
+position = Vector2(523, 388)
+scale = Vector2(0.609766, 0.609766)
+texture = ExtResource("52_iivb2")
+
+[node name="tutorial5" type="Panel" parent="tutorial/video"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_84hnn")
+
+[node name="Line3" type="Sprite2D" parent="tutorial/video/tutorial5"]
+position = Vector2(531, 134)
+scale = Vector2(1.86605, 1.33333)
+texture = ExtResource("28_hivax")
+
+[node name="chat" type="Label" parent="tutorial/video/tutorial5"]
+layout_mode = 2
+offset_left = 121.0
+offset_top = 174.0
+offset_right = 943.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "AI bots love philosophical conversations..."
+horizontal_alignment = 1
+
+[node name="chat2" type="Label" parent="tutorial/video/tutorial5"]
+layout_mode = 2
+offset_left = 140.0
+offset_top = 304.0
+offset_right = 520.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Events happen automatically based on room settings:"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="chat3" type="Label" parent="tutorial/video/tutorial5"]
+layout_mode = 2
+offset_left = 577.0
+offset_top = 302.0
+offset_right = 900.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Points accumulate from successful event participation:"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Tutorial51" type="Sprite2D" parent="tutorial/video/tutorial5"]
+position = Vector2(542, 244)
+scale = Vector2(0.82381, 0.82381)
+texture = ExtResource("53_ndc2s")
+
+[node name="Tutorial52" type="Sprite2D" parent="tutorial/video/tutorial5"]
+position = Vector2(330, 469)
+scale = Vector2(0.342767, 0.342767)
+texture = ExtResource("54_o2234")
+
+[node name="Tutorial53" type="Sprite2D" parent="tutorial/video/tutorial5"]
+position = Vector2(733.023, 468.75)
+scale = Vector2(0.345611, 0.345611)
+texture = ExtResource("55_rc2on")
 
 [node name="closeTutorial" type="Button" parent="tutorial/video"]
 layout_mode = 0
-offset_left = 1037.0
-offset_top = 72.0
-offset_right = 1091.0
-offset_bottom = 123.0
-theme_override_styles/focus = SubResource("StyleBoxEmpty_d4evb")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_67dq1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_11cfy")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_c3lc1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_c33gk")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_l3u5g")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_lvanp")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_q7xqn")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_aaynj")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_fuhvx")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_cgo3o")
+offset_left = 973.0
+offset_top = 68.0
+offset_right = 1043.0
+offset_bottom = 128.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rvgt6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rvgt6")
 icon = ExtResource("6_vdngp")
 flat = true
 expand_icon = true
+
+[node name="next" type="Button" parent="tutorial/video"]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 387.0
+offset_right = 1035.0
+offset_bottom = 439.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rbhh3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rbhh3")
+flat = true
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="tutorial/video/next"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("44_wwaa7")
+expand_mode = 1
+flip_h = true
+
+[node name="back" type="Button" parent="tutorial/video"]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 530.0
+offset_right = 1035.0
+offset_bottom = 582.0
+flat = true
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="tutorial/video/back"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("44_wwaa7")
+expand_mode = 1
 
 [node name="ConnectionStatus" type="Label" parent="."]
 visible = false
