@@ -1,0 +1,1937 @@
+[gd_scene load_steps=207 format=3 uid="uid://dx2jgsklfx2av"]
+
+[ext_resource type="Texture2D" uid="uid://cyivxiuvpj68m" path="res://Backgrounds/Room.jpg" id="1_10lgj"]
+[ext_resource type="Script" path="res://Scripts/room.gd" id="1_fc77d"]
+[ext_resource type="Texture2D" uid="uid://ddsx3jy3pwfsn" path="res://Backgrounds/Characters/Character_2-1.png" id="2_2xo54"]
+[ext_resource type="Texture2D" uid="uid://btd73wcgkj54c" path="res://Backgrounds/Characters/Character_3-2.png" id="3_5fev7"]
+[ext_resource type="Texture2D" uid="uid://kc6k56lfd5wa" path="res://Backgrounds/Characters/Character_1-1.png" id="3_mvqam"]
+[ext_resource type="Texture2D" uid="uid://chmud7a05sxcm" path="res://Backgrounds/Characters/Character_2-2.png" id="4_berbs"]
+[ext_resource type="Texture2D" uid="uid://wku8vc3vtb3o" path="res://Backgrounds/Characters/Character_3-1.png" id="4_joxsv"]
+[ext_resource type="Texture2D" uid="uid://pnrrqde3g4x" path="res://Backgrounds/Characters/Character_1.1.png" id="5_a5xve"]
+[ext_resource type="Texture2D" uid="uid://53gft1ga3coy" path="res://Backgrounds/Characters/Character_5-1.png" id="6_n41dn"]
+[ext_resource type="Texture2D" uid="uid://dy62qs1mvgnq0" path="res://Backgrounds/Characters/Character_6-1.png" id="7_67frc"]
+[ext_resource type="Texture2D" uid="uid://g8s3yc1y4yyd" path="res://Backgrounds/Characters/Character_7-1.png" id="8_vfl3u"]
+[ext_resource type="Texture2D" uid="uid://cys8e1kn8s5rc" path="res://Backgrounds/Characters/Character_1-2.png" id="9_0emnc"]
+[ext_resource type="Texture2D" uid="uid://cfnev3wuqmjj7" path="res://Backgrounds/Characters/Character_4-2.png" id="11_ckeba"]
+[ext_resource type="Texture2D" uid="uid://y7j6h6ux3uqr" path="res://Backgrounds/Characters/Character_5-2.png" id="12_eajkm"]
+[ext_resource type="Texture2D" uid="uid://gcxlx5tey8hq" path="res://Backgrounds/Characters/Character_6-2.png" id="13_k4tsh"]
+[ext_resource type="Texture2D" uid="uid://d2b8tosmobrek" path="res://Backgrounds/Characters/Character_7-2.png" id="14_2r36f"]
+[ext_resource type="Texture2D" uid="uid://w4ixlh7bafv2" path="res://Backgrounds/Imgs/playersPosters-ico.png" id="16_hdm7e"]
+[ext_resource type="Script" path="res://Scripts/players_list.gd" id="17_n3yfm"]
+[ext_resource type="Texture2D" uid="uid://djm3l73j2c1xq" path="res://Backgrounds/Imgs/playersPoster.png" id="17_y4ysr"]
+[ext_resource type="FontFile" uid="uid://bg5i4e2ar23on" path="res://Fonts/Atarian/SF Atarian System.ttf" id="18_rlb05"]
+[ext_resource type="Texture2D" uid="uid://shyvvdt8k837" path="res://Backgrounds/PlayerIcons/LegendaryIcon-6.png" id="19_4tayx"]
+[ext_resource type="Texture2D" uid="uid://dc8jwqpw72fp3" path="res://Backgrounds/PlayerIcons/LegendaryIcon-3.png" id="19_c0axa"]
+[ext_resource type="Texture2D" uid="uid://b8hbhaqwwqxqp" path="res://Backgrounds/PlayerIcons/LegendaryIcon-2.jpg" id="19_j0lpn"]
+[ext_resource type="Texture2D" uid="uid://f7dpoecsxlas" path="res://Backgrounds/Imgs/ClosePoster-icon.png" id="20_kes3s"]
+[ext_resource type="FontFile" uid="uid://bmp6x08k0arm2" path="res://Fonts/Atarian/SF Atarian System Bold.ttf" id="20_sjpab"]
+[ext_resource type="FontFile" uid="uid://dwmxbp0b6dq1j" path="res://Fonts/Atarian/SF Atarian System Italic.ttf" id="21_6qltw"]
+[ext_resource type="Texture2D" uid="uid://bmvpu76dseqjm" path="res://Backgrounds/Imgs/addFriend-ico.png" id="22_6orbs"]
+[ext_resource type="Texture2D" uid="uid://cv4pervl68cbr" path="res://Backgrounds/Imgs/Friend-ico.png" id="22_c87k4"]
+[ext_resource type="Texture2D" uid="uid://bjgxp70tx26em" path="res://Backgrounds/Imgs/line.png" id="23_gday6"]
+[ext_resource type="Texture2D" uid="uid://clchv7t7lsd1t" path="res://Backgrounds/PlayerIcons/EpicIcon-1.jpg" id="25_2q8cj"]
+[ext_resource type="Texture2D" uid="uid://nlt8qv0nbgxk" path="res://Backgrounds/Imgs/arrow-icon.png" id="26_mrb23"]
+[ext_resource type="Texture2D" uid="uid://xlkqy32pbq3q" path="res://Backgrounds/Imgs/arrowDisabled-icon.png" id="28_5q11e"]
+[ext_resource type="Texture2D" uid="uid://c7jgd3s3d6vnc" path="res://Backgrounds/Imgs/ChatIcon.png" id="32_qp3qn"]
+[ext_resource type="Texture2D" uid="uid://wmhttewjokjr" path="res://Backgrounds/Imgs/ChatPoster.png" id="33_3kokj"]
+[ext_resource type="Script" path="res://Scripts/chat_history_panel.gd" id="33_678pl"]
+[ext_resource type="FontFile" uid="uid://b5hqvjt7x3nvg" path="res://Fonts/ArimaMadurai-Black.ttf" id="34_uoplh"]
+[ext_resource type="Texture2D" uid="uid://txupfa5vd7rx" path="res://Backgrounds/Imgs/alert.png" id="36_6dkjk"]
+[ext_resource type="Script" path="res://Scripts/board_panel.gd" id="36_jroeg"]
+[ext_resource type="Texture2D" uid="uid://c6m65t051gwo0" path="res://Backgrounds/board.png" id="36_v0siu"]
+[ext_resource type="FontFile" uid="uid://bj7l34l11qhqf" path="res://Fonts/ArimaMadurai-Medium.ttf" id="37_3glnu"]
+[ext_resource type="Texture2D" uid="uid://bxno3up8s8imu" path="res://Backgrounds/Imgs/line2.png" id="39_sd6p7"]
+[ext_resource type="Script" path="res://Scripts/chat.gd" id="40_djk1d"]
+[ext_resource type="Texture2D" uid="uid://c53fnlhebsw7v" path="res://Backgrounds/Imgs/chat.png" id="40_u3a54"]
+[ext_resource type="Texture2D" uid="uid://c4cr4bxtggxlu" path="res://Backgrounds/Imgs/sendMessage-Icon.png" id="41_vn6w6"]
+[ext_resource type="Texture2D" uid="uid://di5bn2o1fsi0r" path="res://Backgrounds/PlayerIcons/IAIcon.png" id="42_sd0bd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pvjb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7m444"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xrx4x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dja4h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1gmgd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_561ad"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_exwh7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57een"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_53nlu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_77olx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s3lqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mxffh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jsu74"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8yg8u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7y6k3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ukmkl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qeu5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ysetj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2k81"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2naoa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yi1kl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t35r8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xx3em"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xvlmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eow6p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dhuxq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ij26"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gb6bd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52hl3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j3j1o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s5gom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b8joo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sc43e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sbtmm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gjmb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qf254"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p0875"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tkyec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_naq7p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ysl64"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6kmir"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1o730"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5w47e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_axkkm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jrd7o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jvccu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tug7w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cwepo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v6af4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1d3j1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8185s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y076f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wb3jh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nunw0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d06xa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nca2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2j80l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_swy5s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gvm2k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b8ay0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypbfp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5po1s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w6unt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixtgb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f5un5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p06gb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i0jst"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hydyl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pga28"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kdbik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_coui7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qo2aw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kw1bf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1x3i4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_htnv4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dt4q3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xylbt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8x73u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4roop"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_djv3p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8i48w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xyweg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vg6x4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghu5n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ypi0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16q1m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5rdyj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jpwxj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_net8h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ubrin"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_60h51"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3q6gd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2y1cd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndr4f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eg1fw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6irbs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lsvmy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ogvtp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwf8m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jeg5h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o03ne"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h8mlf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ldbj8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.301961, 0.0784314, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56pbi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vljmq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4grof"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kkm74"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f0omg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjja1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1a20i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8wjod"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q0pt1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r44ma"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7etu0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bkpcv"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 4
+border_width_bottom = 3
+border_color = Color(0.301961, 0.0784314, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h1gs1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b45nv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b65xc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o0gy1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qseny"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2ajy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_okfn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q1uxo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fo2na"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kxijp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g8ur0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bquyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xca68"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fy01s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wilal"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bomvs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vvymc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lpvcn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ones"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cxjcb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr8rr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03x3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0m67l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8kbrg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmi68"]
+bg_color = Color(0.611765, 0.278431, 0.0588235, 0.333333)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.254902, 0.152941, 0.0352941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bm57d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k3f7i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0m1qs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jbjol"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lpxtg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ac3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7skjp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3nrx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_30qc7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bkhbi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0dun4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xinky"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7yo3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rbrg6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ts7a3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2yqw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8ugh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bpkxu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_im8ks"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdtq4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ocjm"]
+
+[node name="Room" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fc77d")
+
+[node name="RoomBg" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("1_10lgj")
+
+[node name="Characters" type="Container" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Character3-1" type="Sprite2D" parent="Characters"]
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("4_joxsv")
+
+[node name="Character3-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("3_5fev7")
+
+[node name="Character2-1" type="Sprite2D" parent="Characters"]
+position = Vector2(576.5, 324)
+scale = Vector2(1.73645, 1.75135)
+texture = ExtResource("2_2xo54")
+
+[node name="Character2-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("4_berbs")
+
+[node name="Character1-1" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("3_mvqam")
+
+[node name="Character1-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("9_0emnc")
+
+[node name="Character4-1" type="Sprite2D" parent="Characters"]
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("5_a5xve")
+
+[node name="Character4-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("11_ckeba")
+
+[node name="Character5-1" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("6_n41dn")
+
+[node name="Character5-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("12_eajkm")
+
+[node name="Character6-1" type="Sprite2D" parent="Characters"]
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("7_67frc")
+
+[node name="Character6-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("13_k4tsh")
+
+[node name="Character7-1" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 323.5)
+scale = Vector2(1.73494, 1.74865)
+texture = ExtResource("8_vfl3u")
+
+[node name="Character7-2" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(576, 324.5)
+scale = Vector2(1.73494, 1.74865)
+texture = ExtResource("14_2r36f")
+
+[node name="PosterButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 56.0
+offset_right = 1155.0
+offset_bottom = 313.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pvjb")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7m444")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xrx4x")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_dja4h")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_1gmgd")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_561ad")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_exwh7")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_57een")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_53nlu")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_77olx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s3lqq")
+flat = true
+
+[node name="PlayersPosters-ico" type="Sprite2D" parent="PosterButton"]
+position = Vector2(61, 127)
+texture = ExtResource("16_hdm7e")
+
+[node name="ChatButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 106.0
+offset_bottom = 92.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mxffh")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jsu74")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8yg8u")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7y6k3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ukmkl")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_qeu5u")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ysetj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_h2k81")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2naoa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yi1kl")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t35r8")
+flat = true
+
+[node name="ChatBtnImg" type="TextureRect" parent="ChatButton"]
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 93.0
+texture = ExtResource("32_qp3qn")
+expand_mode = 1
+
+[node name="exitBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 145.0
+offset_right = 388.0
+offset_bottom = 310.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xx3em")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_xvlmk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_eow6p")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_dhuxq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5ij26")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gb6bd")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_52hl3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_j3j1o")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s5gom")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_b8joo")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sc43e")
+flat = true
+
+[node name="BoardButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 87.0
+offset_right = 759.0
+offset_bottom = 310.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sbtmm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_gjmb7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qf254")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_p0875")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tkyec")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_naq7p")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ysl64")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6kmir")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1o730")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5w47e")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_axkkm")
+flat = true
+
+[node name="chatButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 11.0
+offset_right = 107.0
+offset_bottom = 91.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jrd7o")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jvccu")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tug7w")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cwepo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_v6af4")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1d3j1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8185s")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_y076f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wb3jh")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_nunw0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d06xa")
+flat = true
+
+[node name="PlayersList" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 325.0
+offset_right = 835.0
+offset_bottom = 647.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_nca2t")
+script = ExtResource("17_n3yfm")
+
+[node name="PlayersPoster" type="Sprite2D" parent="PlayersList"]
+position = Vector2(255, 323)
+texture = ExtResource("17_y4ysr")
+
+[node name="Title" type="Label" parent="PlayersList"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 59.0
+offset_right = 455.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 40
+text = "PLAYERS LIST"
+horizontal_alignment = 1
+
+[node name="CloseButton" type="Button" parent="PlayersList"]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 64.0
+offset_right = 434.0
+offset_bottom = 93.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2j80l")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_swy5s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_gvm2k")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_b8ay0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ypbfp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5po1s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_w6unt")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ixtgb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_f5un5")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_p06gb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i0jst")
+flat = true
+
+[node name="CloseImg" type="TextureRect" parent="PlayersList/CloseButton"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 27.0
+texture = ExtResource("20_kes3s")
+expand_mode = 1
+
+[node name="Line" type="Sprite2D" parent="PlayersList"]
+position = Vector2(258, 104)
+scale = Vector2(0.860277, 1)
+texture = ExtResource("23_gday6")
+
+[node name="PlayerList" type="VBoxContainer" parent="PlayersList"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 120.0
+offset_right = 446.0
+offset_bottom = 552.0
+theme_override_constants/separation = 110
+
+[node name="PlayerPanel" type="Panel" parent="PlayersList/PlayerList"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hydyl")
+
+[node name="PlayerIcon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 88.0
+offset_bottom = 99.0
+texture = ExtResource("19_c0axa")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 2
+offset_left = 92.0
+offset_top = 6.0
+offset_right = 289.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 35
+text = "user23yds"
+horizontal_alignment = 1
+
+[node name="PlayerPts" type="Label" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 50.0
+offset_right = 281.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "15"
+horizontal_alignment = 1
+
+[node name="PlayerPts2" type="Label" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 50.0
+offset_right = 309.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "pts"
+horizontal_alignment = 1
+
+[node name="AddFriendButton" type="Button" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 15.0
+offset_right = 365.0
+offset_bottom = 84.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pga28")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_kdbik")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_coui7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qo2aw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kw1bf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1x3i4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_htnv4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dt4q3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xylbt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8x73u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4roop")
+
+[node name="Friend-Icon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 15.0
+offset_right = 364.0
+offset_bottom = 84.0
+texture = ExtResource("22_c87k4")
+expand_mode = 1
+
+[node name="PlayerPanel2" type="Panel" parent="PlayersList/PlayerList"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hydyl")
+
+[node name="PlayerIcon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 88.0
+offset_bottom = 99.0
+texture = ExtResource("19_4tayx")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 2
+offset_left = 92.0
+offset_top = 6.0
+offset_right = 289.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 35
+text = "IISheikII"
+horizontal_alignment = 1
+
+[node name="PlayerPts" type="Label" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 50.0
+offset_right = 281.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="AddFriendButton" type="Button" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 15.0
+offset_right = 365.0
+offset_bottom = 84.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pga28")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_kdbik")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_coui7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qo2aw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kw1bf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1x3i4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_htnv4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dt4q3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xylbt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8x73u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4roop")
+
+[node name="Friend-Icon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 15.0
+offset_right = 364.0
+offset_bottom = 84.0
+texture = ExtResource("22_6orbs")
+expand_mode = 1
+
+[node name="PlayerPts2" type="Label" parent="PlayersList/PlayerList/PlayerPanel2"]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 50.0
+offset_right = 307.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "pts"
+horizontal_alignment = 1
+
+[node name="PlayerPanel3" type="Panel" parent="PlayersList/PlayerList"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hydyl")
+
+[node name="PlayerIcon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 88.0
+offset_bottom = 99.0
+texture = ExtResource("19_j0lpn")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 2
+offset_left = 92.0
+offset_top = 6.0
+offset_right = 289.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 35
+text = "Croquetas"
+horizontal_alignment = 1
+
+[node name="PlayerPts" type="Label" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 50.0
+offset_right = 281.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "8"
+horizontal_alignment = 1
+
+[node name="AddFriendButton" type="Button" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 15.0
+offset_right = 365.0
+offset_bottom = 84.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pga28")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_kdbik")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_coui7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qo2aw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kw1bf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1x3i4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_htnv4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dt4q3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xylbt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8x73u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4roop")
+
+[node name="Friend-Icon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 15.0
+offset_right = 364.0
+offset_bottom = 84.0
+texture = ExtResource("22_6orbs")
+expand_mode = 1
+
+[node name="PlayerPts2" type="Label" parent="PlayersList/PlayerList/PlayerPanel3"]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 50.0
+offset_right = 307.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "pts"
+horizontal_alignment = 1
+
+[node name="PlayerPanel4" type="Panel" parent="PlayersList/PlayerList"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hydyl")
+
+[node name="PlayerIcon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 88.0
+offset_bottom = 99.0
+texture = ExtResource("25_2q8cj")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 2
+offset_left = 92.0
+offset_top = 6.0
+offset_right = 289.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 35
+text = "MonaMona"
+horizontal_alignment = 1
+
+[node name="PlayerPts" type="Label" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 50.0
+offset_right = 281.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "50"
+horizontal_alignment = 1
+
+[node name="AddFriendButton" type="Button" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 15.0
+offset_right = 365.0
+offset_bottom = 84.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pga28")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_kdbik")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_coui7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qo2aw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kw1bf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1x3i4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_htnv4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dt4q3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xylbt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8x73u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4roop")
+
+[node name="Friend-Icon" type="TextureRect" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 15.0
+offset_right = 364.0
+offset_bottom = 84.0
+texture = ExtResource("22_c87k4")
+expand_mode = 1
+
+[node name="PlayerPts2" type="Label" parent="PlayersList/PlayerList/PlayerPanel4"]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 50.0
+offset_right = 307.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.248808, 0.110979, 0.0493297, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 20
+text = "pts"
+horizontal_alignment = 1
+
+[node name="PlayersNumber" type="Label" parent="PlayersList"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 562.0
+offset_right = 262.0
+offset_bottom = 588.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_fonts/font = ExtResource("21_6qltw")
+theme_override_font_sizes/font_size = 25
+text = "NUMBER OF PLAYERS: 5"
+
+[node name="BackArrowButton" type="Button" parent="PlayersList"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 562.0
+offset_right = 377.0
+offset_bottom = 586.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_djv3p")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8i48w")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xyweg")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vg6x4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ghu5n")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_3ypi0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16q1m")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5rdyj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jpwxj")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_net8h")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ubrin")
+icon = SubResource("ImageTexture_60h51")
+flat = true
+
+[node name="ArrowImg" type="TextureRect" parent="PlayersList/BackArrowButton"]
+visible = false
+layout_mode = 0
+offset_right = 49.0
+offset_bottom = 24.0
+texture = ExtResource("26_mrb23")
+expand_mode = 1
+
+[node name="DisabledArrowImg" type="TextureRect" parent="PlayersList/BackArrowButton"]
+layout_mode = 0
+offset_right = 49.0
+offset_bottom = 24.0
+texture = ExtResource("28_5q11e")
+expand_mode = 1
+
+[node name="NextArrowButton" type="Button" parent="PlayersList"]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 562.0
+offset_right = 442.0
+offset_bottom = 586.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3q6gd")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2y1cd")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ndr4f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_eg1fw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_6irbs")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_lsvmy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ogvtp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dwf8m")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jeg5h")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_o03ne")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h8mlf")
+flat = true
+
+[node name="ArrowImg" type="TextureRect" parent="PlayersList/NextArrowButton"]
+layout_mode = 0
+offset_right = 49.0
+offset_bottom = 24.0
+texture = ExtResource("26_mrb23")
+expand_mode = 1
+flip_h = true
+
+[node name="DisabledArrowImg" type="TextureRect" parent="PlayersList/NextArrowButton"]
+layout_mode = 0
+offset_right = 49.0
+offset_bottom = 24.0
+texture = ExtResource("28_5q11e")
+expand_mode = 1
+flip_h = true
+
+[node name="ChatPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 331.0
+offset_bottom = 646.0
+script = ExtResource("33_678pl")
+
+[node name="TextureRect" type="TextureRect" parent="ChatPanel"]
+layout_mode = 0
+offset_right = 410.0
+offset_bottom = 648.0
+texture = ExtResource("33_3kokj")
+expand_mode = 1
+
+[node name="title" type="Label" parent="ChatPanel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 15.0
+offset_right = 298.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 45
+text = "CHAT HISTORY"
+horizontal_alignment = 1
+
+[node name="CloseChatHButton" type="Button" parent="ChatPanel"]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 24.0
+offset_right = 320.0
+offset_bottom = 53.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2j80l")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_swy5s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_gvm2k")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_b8ay0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ypbfp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5po1s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_w6unt")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ixtgb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_f5un5")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_p06gb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i0jst")
+flat = true
+
+[node name="CloseImg" type="TextureRect" parent="ChatPanel/CloseChatHButton"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 27.0
+texture = ExtResource("20_kes3s")
+expand_mode = 1
+
+[node name="Line" type="Sprite2D" parent="ChatPanel"]
+position = Vector2(166, 64)
+scale = Vector2(0.720554, 1)
+texture = ExtResource("23_gday6")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ChatPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 323.0
+offset_bottom = 629.0
+
+[node name="VScrollBar" type="VScrollBar" parent="ChatPanel/ScrollContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ChatPanel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ChatPanel/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 60
+
+[node name="text" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_c0axa")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "user23yds"
+horizontal_alignment = 1
+
+[node name="text2" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at magna nec neque sagittis dignissim. Suspendisse potenti.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text2"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_4tayx")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text2"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "IISheikII"
+horizontal_alignment = 1
+
+[node name="text3" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at magna nec neque sagittis dignissim. Suspendisse potenti.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text3"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("25_2q8cj")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text3"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "MonaMona"
+horizontal_alignment = 1
+
+[node name="text4" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text4"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_j0lpn")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text4"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "Croquetas"
+horizontal_alignment = 1
+
+[node name="text5" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text5"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_c0axa")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text5"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "user23yds"
+horizontal_alignment = 1
+
+[node name="text6" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text6"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("25_2q8cj")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text6"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "MonaMona"
+horizontal_alignment = 1
+
+[node name="text7" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at magna nec neque sagittis dignissim. Suspendisse potenti.
+
+"
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text7"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_j0lpn")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text7"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "Croquetas"
+horizontal_alignment = 1
+
+[node name="text8" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "            Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text8"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_4tayx")
+expand_mode = 3
+
+[node name="PlayerName" type="Label" parent="ChatPanel/ScrollContainer/MarginContainer/VBoxContainer2/text8"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -36.0
+offset_right = 246.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "IISheikII"
+horizontal_alignment = 1
+
+[node name="alert" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_56pbi")
+
+[node name="Alert" type="Sprite2D" parent="alert"]
+position = Vector2(583.75, 299)
+scale = Vector2(1.12066, 1.032)
+texture = ExtResource("36_6dkjk")
+
+[node name="Label" type="Label" parent="alert"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 246.0
+offset_right = 808.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(0.301961, 0.0784314, 0, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 32
+text = "ARE YOU SURE YOU WANT TO LEAVE?"
+horizontal_alignment = 1
+
+[node name="leave" type="Button" parent="alert"]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 306.0
+offset_right = 583.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vljmq")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4grof")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_kkm74")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_f0omg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kjja1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1a20i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8wjod")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_q0pt1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_r44ma")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7etu0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bkpcv")
+text = "LEAVE"
+
+[node name="cancel" type="Button" parent="alert"]
+layout_mode = 0
+offset_left = 601.0
+offset_top = 306.0
+offset_right = 705.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.25149, 0.442456, 0, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h1gs1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_b45nv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b65xc")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_o0gy1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_qseny")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_u2ajy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_okfn4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_q1uxo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fo2na")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_kxijp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bkpcv")
+text = "CANCEL"
+
+[node name="BoardPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_g8ur0")
+script = ExtResource("36_jroeg")
+
+[node name="Board" type="Sprite2D" parent="BoardPanel"]
+position = Vector2(576, 324)
+scale = Vector2(1.73494, 1.75135)
+texture = ExtResource("36_v0siu")
+
+[node name="options" type="Panel" parent="BoardPanel"]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 154.0
+offset_right = 934.0
+offset_bottom = 213.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bquyi")
+
+[node name="gameRulesLabel" type="Label" parent="BoardPanel/options"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 3.0
+offset_right = 317.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 40
+text = "GAME RULES"
+horizontal_alignment = 1
+
+[node name="GameRules" type="Button" parent="BoardPanel/options/gameRulesLabel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="eventsLabel" type="Label" parent="BoardPanel/options"]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 3.0
+offset_right = 669.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 40
+text = "EVENTS"
+horizontal_alignment = 1
+
+[node name="Events" type="Button" parent="BoardPanel/options/eventsLabel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Line2" type="Sprite2D" parent="BoardPanel/options"]
+position = Vector2(183, 68.25)
+scale = Vector2(1, 0.318182)
+texture = ExtResource("39_sd6p7")
+
+[node name="Line3" type="Sprite2D" parent="BoardPanel/options"]
+position = Vector2(530, 68)
+scale = Vector2(1, 0.318182)
+texture = ExtResource("39_sd6p7")
+
+[node name="gameRulesContent" type="Panel" parent="BoardPanel"]
+visible = false
+layout_mode = 0
+offset_left = 248.0
+offset_top = 226.0
+offset_right = 922.0
+offset_bottom = 511.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xca68")
+
+[node name="rounds" type="Label" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 17.0
+offset_right = 667.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Rounds: 1 / 10"
+
+[node name="iaPlayers" type="Label" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 81.0
+offset_right = 620.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 25
+text = "IA Participants: "
+
+[node name="participants" type="Label" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 79.0
+offset_right = 291.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 25
+text = "Human Participants:"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 122.0
+offset_right = 235.0
+offset_bottom = 279.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoardPanel/gameRulesContent/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="BoardPanel/gameRulesContent/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("37_3glnu")
+autowrap_mode = 3
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 122.0
+offset_right = 612.0
+offset_bottom = 279.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoardPanel/gameRulesContent/ScrollContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="BoardPanel/gameRulesContent/ScrollContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("37_3glnu")
+text = "
+"
+autowrap_mode = 3
+
+[node name="participants2" type="Label" parent="BoardPanel/gameRulesContent"]
+visible = false
+layout_mode = 0
+offset_left = 14.0
+offset_top = 222.0
+offset_right = 223.0
+offset_bottom = 272.0
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Host Type: Auto"
+
+[node name="Private" type="Label" parent="BoardPanel/gameRulesContent"]
+visible = false
+layout_mode = 0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 139.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(0.545098, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Private
+"
+
+[node name="Private2" type="Label" parent="BoardPanel/gameRulesContent"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 13.0
+offset_right = 139.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0.733333, 0, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Public
+"
+
+[node name="EventsContent" type="Panel" parent="BoardPanel"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 226.0
+offset_right = 922.0
+offset_bottom = 511.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xca68")
+
+[node name="nextEvent" type="Label" parent="BoardPanel/EventsContent"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 242.0
+offset_right = 217.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Next event: 15s"
+
+[node name="HostType" type="Label" parent="BoardPanel/EventsContent"]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 242.0
+offset_right = 627.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Host Type: Mystery"
+horizontal_alignment = 2
+
+[node name="title" type="Label" parent="BoardPanel/EventsContent"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 26.0
+offset_right = 296.0
+offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 25
+text = "Events History:"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BoardPanel/EventsContent"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 68.0
+offset_right = 626.0
+offset_bottom = 242.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoardPanel/EventsContent/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="BoardPanel/EventsContent/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 21
+autowrap_mode = 3
+
+[node name="participants2" type="Label" parent="BoardPanel/EventsContent"]
+visible = false
+layout_mode = 0
+offset_left = 396.0
+offset_top = 160.0
+offset_right = 592.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("37_3glnu")
+theme_override_font_sizes/font_size = 30
+text = "Host Type: Auto"
+
+[node name="roundNumber" type="Label" parent="BoardPanel"]
+visible = false
+layout_mode = 0
+offset_left = 511.0
+offset_top = 23.0
+offset_right = 622.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.835712, 0.771576, 0.714058, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_font_sizes/font_size = 45
+text = "1"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="BoardPanel"]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 37.0
+offset_right = 268.0
+offset_bottom = 91.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fy01s")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wilal")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bomvs")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vvymc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lpvcn")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8ones")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cxjcb")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gr8rr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_03x3t")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_0m67l")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8kbrg")
+icon = ExtResource("20_kes3s")
+flat = true
+expand_icon = true
+
+[node name="chat" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("40_djk1d")
+
+[node name="chatBg" type="TextureRect" parent="chat"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_u3a54")
+expand_mode = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="chat"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 86.0
+offset_right = 1011.0
+offset_bottom = 544.0
+
+[node name="MarginContainer" type="MarginContainer" parent="chat/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 55
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="chat/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 60
+
+[node name="text_type_1" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/text_type_1"]
+layout_mode = 2
+offset_left = -23.0
+offset_top = -32.0
+offset_right = 34.0
+offset_bottom = 25.0
+texture = ExtResource("19_c0axa")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlayerName" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/text_type_1"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = -33.0
+offset_right = 246.0
+offset_bottom = -7.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 25
+
+[node name="event" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16514, 0.325498, 0.0420849, 1)
+theme_override_fonts/font = ExtResource("18_rlb05")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+text = "           
+What's the capital of Germany?
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="PlayerIcon" type="TextureRect" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/event"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = -54.0
+offset_right = 43.5
+offset_bottom = 33.0
+grow_horizontal = 2
+texture = ExtResource("42_sd0bd")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlayerName" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/event"]
+layout_mode = 0
+offset_left = 142.0
+offset_top = -36.0
+offset_right = 309.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "QYNTO IA"
+horizontal_alignment = 2
+
+[node name="PlayerName2" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/event"]
+layout_mode = 0
+offset_left = 405.0
+offset_top = -36.0
+offset_right = 491.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 30
+text = "HOST"
+
+[node name="text_type_3" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ldbj8")
+autowrap_mode = 3
+
+[node name="PlayerIcon" type="TextureRect" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/text_type_3"]
+layout_mode = 2
+offset_left = 766.0
+offset_top = -32.0
+offset_right = 823.0
+offset_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("25_2q8cj")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlayerName" type="Label" parent="chat/ScrollContainer/MarginContainer/VBoxContainer2/text_type_3"]
+layout_mode = 0
+offset_left = 562.0
+offset_top = -33.0
+offset_right = 758.0
+offset_bottom = -4.0
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("20_sjpab")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 2
+
+[node name="LineEdit" type="LineEdit" parent="chat"]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 563.0
+offset_right = 852.0
+offset_bottom = 599.0
+theme_override_colors/clear_button_color_pressed = Color(0.431373, 0.121569, 0, 1)
+theme_override_colors/clear_button_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_colors/selection_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_colors/caret_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_colors/font_color = Color(0.431373, 0.121569, 0, 1)
+theme_override_fonts/font = ExtResource("34_uoplh")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_dmi68")
+
+[node name="SendMessage" type="Button" parent="chat"]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 554.0
+offset_right = 915.0
+offset_bottom = 605.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm57d")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_k3f7i")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0m1qs")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jbjol")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lpxtg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6ac3j")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7skjp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_r3nrx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_30qc7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_bkhbi")
+icon = ExtResource("41_vn6w6")
+flat = true
+expand_icon = true
+
+[node name="closeChat" type="Button" parent="chat"]
+layout_mode = 0
+offset_left = 1065.0
+offset_top = 54.0
+offset_right = 1119.0
+offset_bottom = 105.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0dun4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_xinky")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_m7yo3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rbrg6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ts7a3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_v2yqw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x8ugh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_bpkxu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_im8ks")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_tdtq4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3ocjm")
+icon = ExtResource("20_kes3s")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="PosterButton" to="PlayersList" method="_on_poster_button_pressed"]
+[connection signal="pressed" from="exitBtn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="BoardButton" to="BoardPanel" method="_on_board_button_pressed"]
+[connection signal="pressed" from="chatButton" to="chat" method="_on_chat_button_pressed"]
+[connection signal="pressed" from="PlayersList/CloseButton" to="PlayersList" method="_on_close_button_pressed"]
+[connection signal="pressed" from="ChatPanel/CloseChatHButton" to="ChatPanel" method="_on_close_chat_h_button_pressed"]
+[connection signal="pressed" from="alert/leave" to="." method="_on_leave_pressed"]
+[connection signal="pressed" from="alert/cancel" to="." method="_on_cancel_pressed"]
+[connection signal="pressed" from="BoardPanel/options/gameRulesLabel/GameRules" to="BoardPanel" method="_on_game_rules_pressed"]
+[connection signal="pressed" from="BoardPanel/options/eventsLabel/Events" to="BoardPanel" method="_on_events_pressed"]
+[connection signal="pressed" from="BoardPanel/Button" to="BoardPanel" method="_on_button_pressed"]
+[connection signal="pressed" from="chat/closeChat" to="chat" method="_on_close_chat_pressed"]

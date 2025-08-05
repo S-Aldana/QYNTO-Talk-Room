@@ -1,0 +1,31 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="QYNTO: Talk Room"
+run/main_scene="res://Scenes/menu.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://Icon.png"
+
+[autoload]
+
+Player="*res://Scripts/Player.gd"
+LobbyManager="*res://Scripts/LobbyManager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true

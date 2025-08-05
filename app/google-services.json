@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "393562252459",
+    "project_id": "qynto-talk-room",
+    "storage_bucket": "qynto-talk-room.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393562252459:android:b653609d59b6ac307e83ee",
+        "android_client_info": {
+          "package_name": "com.SaraGomez.Qynto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAun5Uosq1hpe6eYbnliE6VB5PCjfOO56w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
