@@ -74,3 +74,6 @@ secrets/
 *.bak
 *.backup"Apk/" 
 ".env" 
+"*.apk" 
+"*.idsig" 
+"*.aab" 
