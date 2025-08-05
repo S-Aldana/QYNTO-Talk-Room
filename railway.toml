@@ -1,0 +1,10 @@
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "cd Websocket && npm install && npm start"
+workingDirectory = "/"
+
+[variables]
+NODE_ENV = "production"
