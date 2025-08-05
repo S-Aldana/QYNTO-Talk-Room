@@ -11,8 +11,7 @@ extends Panel
 @onready var legendary_label: Label = $ShowIcon/legendary
 @onready var icon_texture: TextureRect = $ShowIcon/TextureRect
 
-# Referencias al panel de alerta
-@onready var alert_panel: Control = $alert  # Asegúrate de que el nombre coincida con tu nodo
+@onready var alert_panel: Control = $alert
 @onready var alert_label: Label = $alert/Label
 @onready var alert_yes_button: Button = $alert/yes
 @onready var alert_cancel_button: Button = $alert/cancel
@@ -62,7 +61,7 @@ func connect_alert_buttons():
 		alert_cancel_button.pressed.connect(_on_alert_cancel_pressed)
 
 func _on_alert_yes_pressed():
-	Player.play_button_sound()  # Sonido al confirmar
+	Player.play_button_sound()
 	if pending_purchase_icon != "" and icons_data.has(pending_purchase_icon):
 		var icon_data = icons_data[pending_purchase_icon]
 		if Player.points_current >= icon_data.cost:
@@ -77,7 +76,7 @@ func _on_alert_yes_pressed():
 	hide_alert()
 
 func _on_alert_cancel_pressed():
-	Player.play_button_sound()  # Sonido al cancelar
+	Player.play_button_sound()
 	hide_alert()
 
 func show_alert(icon_id: String):
@@ -134,7 +133,7 @@ func connect_buttons():
 		buy_button.pressed.connect(_on_buy_pressed)
 
 func _on_icon_pressed(icon_id: String):
-	Player.play_button_sound()  # Sonido al hacer click en un icono
+	Player.play_button_sound()
 	current_selected_icon = icon_id
 	update_selected_display()
 
@@ -142,16 +141,14 @@ func _on_buy_pressed():
 	var icon_data = icons_data[current_selected_icon]
 	
 	if icon_data.unlocked:
-		# Si el icono está desbloqueado, lo equipamos
 		if current_selected_icon != Player.avatar:
-			Player.play_button_sound()  # Sonido al equipar
+			Player.play_button_sound()
 			Player.set_avatar(current_selected_icon)
 			update_ui()
 		else:
-			Player.play_button_sound()  # Sonido si ya está equipado
+			Player.play_button_sound()
 	else:
-		# Si el icono no está desbloqueado, mostramos el alert
-		Player.play_button_sound()  # Sonido al abrir alert
+		Player.play_button_sound()
 		show_alert(current_selected_icon)
 
 func update_ui():
@@ -220,7 +217,7 @@ func update_selected_display():
 					buy_button.disabled = false
 			else:
 				buy_button.text = "BUY ICON"
-				buy_button.disabled = false  # Siempre habilitado para mostrar el alert
+				buy_button.disabled = false
 
 func get_icon_button(icon_id: String) -> Button:
 	var parts = icon_id.split("_")

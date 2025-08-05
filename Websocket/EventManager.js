@@ -27,7 +27,6 @@ class EventManager {
         
         this.eventActive = false;
         
-        // Broadcast updated lobby data after reset
         this.broadcastLobbyUpdate();
     }
 
@@ -46,7 +45,6 @@ class EventManager {
         console.log(`EVENT MANAGER - Is human message: ${isHumanMessage}`);
         console.log(`EVENT MANAGER - Event active: ${this.eventActive}`);
         
-        // Broadcast lobby update with new count
         this.broadcastLobbyUpdate();
         
         if (this.messageCountSinceEvent >= targetMessages) {
@@ -73,7 +71,6 @@ class EventManager {
         console.log(`EVENT MANAGER - Message count when started: ${this.messageCountSinceEvent}`);
         console.log(`EVENT MANAGER - Event now active, pausing counting`);
         
-        // Broadcast lobby update with event active status
         this.broadcastLobbyUpdate();
     }
 
@@ -98,7 +95,6 @@ class EventManager {
     }
 
     broadcastLobbyUpdate() {
-        // Send updated lobby data to all clients
         setTimeout(() => {
             this.lobby.broadcastToLobby({
                 type: 'lobby_updated',
@@ -119,7 +115,6 @@ class EventManager {
         this.timeUntilNextEvent = intervalSeconds;
         this.lastCountdownUpdate = Date.now();
         
-        // Update countdown every second
         this.countdownTimer = setInterval(() => {
             this.updateCountdown();
         }, 1000);
@@ -145,7 +140,6 @@ class EventManager {
             this.timeUntilNextEvent = Math.max(0, this.timeUntilNextEvent - elapsed);
             this.lastCountdownUpdate = now;
             
-            // Broadcast update every few seconds to keep clients in sync
             if (this.timeUntilNextEvent % 5 === 0 || this.timeUntilNextEvent <= 10) {
                 this.broadcastLobbyUpdate();
             }

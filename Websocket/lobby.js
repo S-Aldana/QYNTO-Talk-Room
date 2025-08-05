@@ -14,7 +14,7 @@ class Lobby {
         this.createdAt = new Date();
         this.gameStarted = false;
         this.assigned_seats = [];
-        this.player_seat_assignments = new Map(); // New: track player -> seat mapping
+        this.player_seat_assignments = new Map();
         this.creatorId = config.creator ? config.creator.id : null;
         
         this.current_round = 1;
@@ -68,7 +68,6 @@ class Lobby {
             points: playerData.points || 0
         });
 
-        // Generate seat assignment for new player
         this.generatePlayerSeatAssignment(playerId);
         this.updateSeats();
 
@@ -84,7 +83,7 @@ class Lobby {
         const player = this.players.get(playerId);
         if (player) {
             this.players.delete(playerId);
-            this.player_seat_assignments.delete(playerId); // Remove seat assignment
+            this.player_seat_assignments.delete(playerId);
             this.updateSeats();
 
             this.broadcastToLobby({
@@ -103,14 +102,12 @@ class Lobby {
         console.log("Total AI players:", this.ai_players.size);
         console.log("Total players for seats:", totalPlayers);
         
-        // Assign seats for AI players if they don't have them
         for (const [aiId, aiPlayer] of this.ai_players) {
             if (!this.player_seat_assignments.has(aiId)) {
                 this.generatePlayerSeatAssignment(aiId);
             }
         }
         
-        // Generate the seats array for the client
         this.assigned_seats = Array.from(this.player_seat_assignments.values()).map(assignment => assignment.seat);
         console.log("Generated seats:", this.assigned_seats);
         console.log("Seat assignments:", Object.fromEntries(this.player_seat_assignments));
@@ -129,13 +126,12 @@ class Lobby {
             for (let i = 0; i < currentAI && i < maxAI; i++) {
                 const aiPlayer = await aiManager.createAIPlayer(i, this.id);
                 this.ai_players.set(aiPlayer.id, aiPlayer);
-                // Generate seat assignment for AI player
                 this.generatePlayerSeatAssignment(aiPlayer.id);
                 console.log(`Created AI player: ${aiPlayer.name} (ID: ${aiPlayer.id})`);
             }
             
             console.log(`Total AI players created: ${this.ai_players.size}`);
-            this.updateSeats(); // Update seats after adding AI players
+            this.updateSeats();
             
             if (this.ai_players.size > 0) {
                 setTimeout(() => {
@@ -171,7 +167,6 @@ class Lobby {
         const all_players = [...human_players, ...ai_players_list];
         const nextEventInfo = this.eventManager.getNextEventInfo();
 
-        // Convert seat assignments to format expected by client
         const seat_assignments = {};
         for (const [playerId, assignment] of this.player_seat_assignments) {
             seat_assignments[playerId] = assignment;
@@ -197,7 +192,7 @@ class Lobby {
             created_at: this.createdAt,
             game_started: this.gameStarted,
             assigned_seats: this.assigned_seats,
-            seat_assignments: seat_assignments, // New: detailed seat assignments
+            seat_assignments: seat_assignments,
             current_round: this.current_round,
             max_rounds: this.max_rounds,
             events_history: this.events_history,
@@ -289,7 +284,7 @@ class Lobby {
             this.ai_players.delete(playerId);
         }
         
-        this.player_seat_assignments.delete(playerId); // Remove seat assignment
+        this.player_seat_assignments.delete(playerId);
         this.updateSeats();
         this.broadcastToLobby({
             type: 'player_eliminated',

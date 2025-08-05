@@ -104,10 +104,8 @@ func setup_room_node(room_node: Control, lobby_data: Dictionary):
 		var host_type_value = lobby_data.get("host_type", "auto")
 		host_type.text = "HOST TYPE: " + host_type_value.capitalize()
 	
-	# ARREGLO PRINCIPAL: Calcular correctamente el conteo de jugadores
 	var current_players = room_content.get_node_or_null("currentPlayers")
 	if current_players:
-		# Usar total_players si está disponible, sino calcular manualmente
 		var current_count = get_total_player_count(lobby_data)
 		var max_count = lobby_data.get("max_players", lobby_data.get("max_participants", 7))
 		var infinite_participants = lobby_data.get("infinite_participants", false)
@@ -135,17 +133,13 @@ func setup_room_node(room_node: Control, lobby_data: Dictionary):
 	
 	setup_player_icons(room_node, lobby_data)
 
-# Nueva función para calcular correctamente el total de jugadores
 func get_total_player_count(lobby_data: Dictionary) -> int:
-	# Prioridad 1: usar total_players si está disponible
 	if lobby_data.has("total_players"):
 		return lobby_data.get("total_players", 0)
 	
-	# Prioridad 2: usar players_list si está disponible
 	if lobby_data.has("players_list"):
 		return lobby_data.get("players_list", []).size()
 	
-	# Prioridad 3: sumar human_players + ai_players
 	var human_count = 0
 	var ai_count = 0
 	
@@ -184,16 +178,13 @@ func setup_player_icons(room_node: Control, lobby_data: Dictionary):
 	for child in children_to_remove:
 		child.queue_free()
 
-	# Usar players_list para mostrar iconos de jugadores reales
 	var players_list = lobby_data.get("players_list", [])
 	var max_players = lobby_data.get("max_players", lobby_data.get("max_participants", 7))
 	var max_ai_players = lobby_data.get("max_ai_players", 0)
 	var infinite_participants = lobby_data.get("infinite_participants", false)
 	
-	# Calcular el total de slots a mostrar
 	var display_total = max_players
 	if infinite_participants:
-		# Si es infinito, mostrar solo los jugadores actuales + algunos slots vacíos
 		display_total = max(players_list.size() + 2, max_players)
 	
 	var players_per_row = 7
